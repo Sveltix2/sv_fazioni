@@ -34,7 +34,7 @@ Citizen.CreateThread(function()
 	for k, v in pairs(Config.Fazioni) do 	
 		for key, coords in pairs(v.deposito) do
 			TriggerEvent('gridsystem:registerMarker', {
-				name = "inventari",
+				name = "inventari"..k,
 				type = 21,
 				pos = vector3(129.5077, -1028.967, 29.34729),
 				color = { r = 255, g = 83, b = 26 },
@@ -53,7 +53,7 @@ Citizen.CreateThread(function()
 	--
 	for k, v in pairs(Config.SpawnerVeicoli) do 	
 		TriggerEvent('gridsystem:registerMarker', {
-			name = "veicoli",
+			name = "veicoli"..k,
 			type = 21,
 			pos = v.marker,
 			color = { r = 255, g = 83, b = 26 },
@@ -71,7 +71,7 @@ Citizen.CreateThread(function()
 	--
 	for k, v in pairs(Config.Fazioni) do 	
 		TriggerEvent('gridsystem:registerMarker', {
-			name = "bossmenu",
+			name = "bossmenu"..k,
 			type = 21,
 			pos = v.bossmenu.pos,
 			color = { r = 255, g = 83, b = 26 },
