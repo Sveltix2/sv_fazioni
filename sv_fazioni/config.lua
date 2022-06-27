@@ -10,8 +10,6 @@ Config.SlotDepositi = 50 --slot a disposizione per i depositi
 
 Config.KGmassimiDepositi = 10 --Capienza in KG del deposito      DA CAMBIARE PRIMA DEL PRIMO AVVIO DELLA RISORSA
 
-Config.GradoDeposito = 4 --grado minimo per accedere al deposito [ES: 4 = SOLO BOSS]
-
 Config.Fazioni = {
     ['Los Santos Customs'] = {  --label
         deposito = {
