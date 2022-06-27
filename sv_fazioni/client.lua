@@ -137,10 +137,8 @@ Veicoli = function()
 	end
 end
 
-Citizen.CreateThread(function()
-    Citizen.Wait(1000)
-	 RegisterKeyMapping('+fatture', 'Menù Fatture', 'keyboard', "F6")
-end)
+
+RegisterKeyMapping('+fatture', 'Menù Fatture', 'keyboard', "F6")
 
 RegisterCommand('+fatture', function()	
 	if puo() then
