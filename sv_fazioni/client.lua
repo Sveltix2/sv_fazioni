@@ -40,7 +40,6 @@ Citizen.CreateThread(function()
 				color = { r = 255, g = 83, b = 26 },
 				scale = vector3(0.4, 0.4, 0.4),
 				permission = v.job,
-				grade = Config.GradoDeposito
 				action = function()
 					exports.ox_inventory:openInventory('stash', {id=v.job})
 				end,
